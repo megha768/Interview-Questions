@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Interview Questions</title>
+    <style>
+        li::marker{color:red}
+    </style>
+</head>
+<body>
+    <h3>Q.1-How to make a picture background image of a webpage?</h3>
+    <p>Ans.-To make a picture background image of a webpage, we can assign image path to the background attribute of the body tag or use 'background-image' property of CSS.</p>
+
+    <h3>Q.2-What does viewport meta tag do?</h3>
+    <p>Ans.-Viewport meta tag sets the width and scaling of the webpage according to screen size of the device.</p>
+
+    <h3>Q.3-If we do not put !DOCTYPE html will html5 will work? is it a html tag?</h3>
+    <p>
+        Ans.- It is not an html tag.It is an instruction to the web browser about the version of the html(html5) the page is written in.
+        Wihtout it html5 still work, but the browser is forced to enter into "quirks mode" which can cause the browser to render the page
+        differently than intended.
+    </p>
+
+    <h3>Q.4-How will you start an ordered list from 10?</h3>
+    <p>Ans.-we will assign the value 10 to start attribute of ol tag.</p>
+    <ol type="1" start="10">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ol>
+
+    <h3>Q.5-Name any 5 html tags.</h3>
+    <p>Ans.-html tag, head tag, body tag, table tag, img tag.</p>
+
+    <h3>Q.6-How will you open another window using anchor tag?</h3>
+    <p>Ans.-we will assign the file name or file path to href attribute of anchor tag and set target attribute's value to _blank.</p>
+    <a href="https://www.cetpainfotech.com" target="_blank">Click Here</a>
+
+    <h3>Q.7-What are self closing tags?</h3>
+    <p>Ans.- Self closing tags are those tags which have only opening tags and don't have any closing tag, ex. - br, hr, img tag.</p>
+
+    <h3>Q.8- How many types of headings are there? how to decide which to use where?</h3>
+    <p>Ans.- There are 6 heading tags in html - h1, h2, h3, h4, h5, h6,in which h1 is the most important tag and h6 is the least important tag.</p>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3> Heading 3</h3>
+    <h4> Heading 4</h4>
+    <h5> Heading 5</h5>
+    <h6> Heading 6</h6>
+
+    <h3>Q.9- Difference between blockline and inline elements.</h3>
+    <p>
+        Ans.- Blockline elements are those elements that take 100% or full width of the browser and they always start on a new line ex.-p, table, headings tag,
+        while inline elements only take required width of the browser and they don't start on the new line ex.- a, img,em,strong,label tag.
+    </p>
+    <p>This is a paragraph</p>
+    <a href="">Click Here</a><a href="">Click Here</a>
+
+    <h3>Q.10-Differnce between em and strong tags.</h3>
+    <p>Ans- em tag is used to emphasis some text on webpage and makes text italic and strong tag makes text bold. we use strong tag when some text is important on the webpage.</p>
+    <em>This is em tag</em>
+    <strong>This is strong tag</strong>
+
+    <h3>Q.11-What are attributes?</h3>
+    <p>
+        Ans.- Attributes are the properties of html tags. They provide additional information about the tag. They are the special keywords that format the appearance and behavior of the content inside the tags.
+        They are always specified in the opening tag ex.- href, src, align, width, height.
+    </p>
+    <p align="center">This is a paragraph</p>
+
+    <h3>Q.12- Differece between html tags and elements.</h3>
+    <p> Ans.- HTML tags are predefined keywords enclosed inside the angular brackets.Some are paired tags which have both opening and closing tag and some are unpaired tags which have only opening tags,
+        they are also called self closing tags.Tags tell the browser how to display a paricular content on the browser.</p>
+    <p> Element is a complete unit consisting of opening tag, content and a closing tag.</p>
+   
+
+    <h3>Q.13-Explain br tag.</h3>
+    <p>Ans.-br refers to line break. It breaks the line and start the content on the new line.</p>
+
+    <h3>Q.14- What are semantic tags?</h3>
+    <p>
+        Ans.- Semantic tags are those tags that clearly describes the purpose of using them and the type of content they contain.
+        Unlike non-semantic tags like div and span which have no inherent meaning and are only used for styling.
+    </p>
+
+    <h3>Q.15-Write code to create an ordered list with roman numbers.</h3>
+    <ol type="I">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+
+    <h3>Q.16-Write code to create an unordered list with circle.</h3>
+    <ul type="circle">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item3</li>
+    </ul>
+
+    <h3>Q.17-Write a code to create a link to https://www.prepbytes.com</h3>
+    <a href="https://www.prepbytes.com">Click Here</a>
+
+    <h3>Q.18-Write a code to insert an image.</h3>
+    <img src="newimage.jpg" height="200" width="200" />
+
+    <h3>Q.19-Write html code to create 2*2 table.</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aman</td>
+                <td>40000</td>
+            </tr>
+            <tr>
+                <td>kavita</td>
+                <td>50000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Q.20-What is the main reason or advantage of label tag?</h3>
+    <h3>Q.21What do you mean by for attribute in label tag?</h3>
+    <p>Ans.-Label tag represents a caption for form elements.It links label text(caption) to form elements.When a user clicks on the label,it automatically focuses on the element.</p>
+    <p>for attribute links label to form control.It's value must be the same as the id of form control that we are liking.</p>
+
+    <h3>Q.22-What is the use of the required attribute in html5?</h3>
+    <p>Ans.-It is a boolean attribute.It indicates that an input field must be filled out before submitting the form.</p>
+
+    <h3>Q.23-How will you implement when you click on submit button your whole data comes in a url form?</h3>
+    <p>Ans.-We will set method attribute's value to 'get' in form tag.</p>
+
+    <h3>Q.24-Create a form containing input fields like name,age,email,contact.</h3>
+    <form method="get">
+        <label for="name">Name:</label><input type="text" id="name" name="name" placeholder="Enter Name" required /><br /><br />
+        <label for="age">Age:</label><input type="number" id="age" name="age" placeholder="Enter Age" /><br /><br />
+        <label for="email">Email:</label><input type="email" id="email" name="email" placeholder="Enter Email Address" required /><br /><br />
+        <label for="contact">Contact:</label><input type="number" id="contact" name="contact" placeholder="Enter Contact" /><br /><br />
+        <input type="submit" />
+    </form>
+
+    <h3>Q.25-Create a table and expalin how to achieve colspan.</h3>
+    <p>Ans.-colspan attribute of td tag is used to combine two or more columns.</p>
+
+    <h3>Q.26-Why do we use colgroup tag in table tag?</h3>
+    <p>
+        Ans.-colgroup tag is like a container.It is used to specify a group of one or more columns for styling and formatting purpose.
+        Inside colgroup tag, col tag is used to specify specific columns to apply formatting.
+    </p>
+
+    <h3>Q.27-What is cell spacing and cell padding?</h3>
+    <p>Ans.- Cell spacing refers to the space between cells and cell padding refers to the space between cell's border and it's content.</p>
+    <table border="1" height="300" width="400" cellspacing="3" cellpadding="10">
+        <colgroup>
+            <col span="2" bgcolor="yellow" />
+            <col span="1" bgcolor="orange" />
+        </colgroup>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td colspan="2">2&3</td>
+        </tr>
+        <tr>
+            <td colspan="3">1&2&3</td>
+        </tr>
+    </table>
+
+    <h3>Q.28- Create radio button and check box and explain the differnce between these two.</h3>
+    <p>Ans.- Radio button is used to select a single option from multiple options while checkbox is used to select multiple options on a webpage.</p>
+    <label>Course:</label>
+    <input type="radio" name="course" />Mern
+    <input type="radio" name="course" />Mean
+    <br /><br />
+    <label>Technology:</label>
+    <input type="checkbox" name="tech" />HTML
+    <input type="checkbox" name="tech" />CSS
+    <input type="checkbox" name="tech" />Node
+    <input type="checkbox" name="tech" />React
+
+    <h3>Q.29-What are some common lists that are used when designing a page?</h3>
+    <p>Ans.- There are 3 types of lists in html- ordered list, unordered list and definition list.</p>
+
+    <h3>Q.30-Write a structure of definition list.</h3>
+    <p>
+        Ans.- Definition list is used to display the terms and their definiton. There are 3 tags in definition list- dl,dt,dd.
+        dl tag - defines the definition list, dt tag - defines the data term and dd tag - defines the data definition.
+    </p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hpertext Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheet</dd>
+    </dl>
+
+    <h3>Q.31 How to insert a copyright symbol on a webpage?</h3>
+    <p>Ans.- To insert copyright symbol in a webpage, we can use entity name '&ampcopy' or entity number '&amp#169'.</p>
+    <p>This is a &copy; symbol</p>
+
+    <h3>Q.32 How to create nested webpage in html? What is the use of iframe tag?</h3>
+    <p>
+        Ans.- To create nested webpage in html, we can use iframe tag. iframe tag is used to embed one webpage into another webpage.
+        iframe tag has src, height, width and allowfullscreen attributes.
+    </p>
+    <iframe src="https://www.prepbytes.com" height="400" width="100%"></iframe>
+
+    <h3>Q.33-Does a hyperlink only apply to text?</h3>
+    <p>Ans.-No,we can also apply hyperlink to image and button.</p>
+    <a href="https://www.pexels.com/search/beautiful" /><img src="./newimage.jpg" height="50" width="50" title="click here" /></a>
+
+    <h3>Q.34- What is a marquee?</h3>
+    <p>Ans.- Marquee tag is used to create scrolling text and images on a webpage.It creates scrolling area for text and images.</p>
+    <marquee bgcolor="red" direction="right" hspace="70" vspace="30">This is a Marquee</marquee>
+
+    <h3>Q.35-What is the use of span tag? give one example.</h3>
+    <p>Ans.-span tag is an inline container and is used to group a part of text on a webpage to apply styles and javascript.</p>
+
+    <p>
+        You can easily change the formatting of selected text in the document text by choosing a look for the selected text from the Quick Styles gallery on the Home tab.
+        <span style="color:green;text-decoration:underline;font-style:italic">
+            To change the overall look of your document, choose new Theme elements on the Page Layout tab.
+        </span> To change the looks available in the Quick Style gallery, use the Change Current Quick Style Set command.
+    </p>
+
+    <h3>Q.36-What is the use of details and summary tag?</h3>
+    <p>
+        Ans.-Details tag specifies additional detail that the user can open and close.It creates a disclosure widget that hide and shows the content.
+        Summary tag is used inside the details tag to specify the heading for the details.
+    </p>
+    <details>
+        <summary>HTML</summary>
+        <p>Hypertext Markup Language.It is used to create webpages</p>
+    </details>
+    <details>
+        <summary>CSS</summary>
+        <p>Cascading Style Sheet.It is used to style or format the apperance or behaviour of the webpage</p>
+    </details>
+
+    <h3>Q.37-What is button tag?</h3>
+    <p>
+        Ans.-Button tag is used to create a button that can be pressed in order to accomplish a particular action.Any text appearing between the opening and closing tag will appear as text on the button.
+        It has a 'type' attribute which can have following values - button,submit,reset.Bydefault type attribute's value is 'submit'.
+    </p>
+    <button type="button" onclick="alert('This is a normal Button')">Button</button>
+
+    <h3>Q.38- What is datalist tag?</h3>
+    <p>Ans.- Datalist tag provides a way to display a list of predefined options for input element.This allows users to either type their own value or select from the list of suggestions.</p>
+    <label for="car">Your Car Name:</label>
+    <input list="cars" id="car" />
+    <datalist id="cars">
+        <option value="BMW">
+        <option value="Mercedes">
+        <option value="Audi">
+    </datalist>
+
+    <h3>Q.39-What is the use of figure tag and figcaption tag in html?</h3>
+    <p>Ans.- figure tag specifies self contained content related to the main content, such as an image,table,or chart.</p>
+    <p>The figcaption(optional) tag is nested within a figure tag to add a caption to the content inside the figure tag.</p>
+    <figure>
+        <img src="./newimage.jpg" height="200" width="200" />
+        <figcaption>Image of a Bird</figcaption>
+        <img src="./newimage2.jpg" height="200" width="200" />
+        <figcaption>Image of Leaves</figcaption>
+    </figure>
+
+    <h3>Q.40- What is the difference between progress and meter tag?</h3>
+    <p>Ans.- Progress tag is used to create progess bar to show how much work in a task has been completed,like displaying the progress of a file upload. it has min,max and value attributes.</p>
+    <p>Meter tag is used to display a measurement on a known scale, like the current disk usage on a computer or a temperature measurement, it has min,max,low,high,value,optimum attributes.</p>
+    <label>Uploading Document:</label>
+    <progress value="70" max="100"></progress><br />
+    <label>Disk Usage:</label>
+    <meter min="0" max="100" low="25" high="75" value="50"></meter>
+
+    <h3>Q41.- What is the canvas element in html5?</h3>
+    <p>Ans.- Canvas tag defines a rectangular area on a webpage where we can draw graphics like shapes,lines,curves,boxes,text,images using Javascript.</p>
+    <canvas height="100" width="200" style="border:solid"></canvas>
+
+    <h3>Q42.- What is an image map?</h3>
+    <p>Ans.- Image mapping in html is a powerful technique that allows us to define clickable areas within an image.These clickable areas can be linked to different destinations,perform various actions or display additional information.</p>
+    <img src="newimage.jpg" height="300" width="400" usemap="#shapemap" />
+    <map name="shapemap">
+        <area shape="circle" coords="75,75,75" href="imagemap2.html" target="_blank" alt="circle" title="circle" style="border-color:white" />
+        <area shape="default" href="imagemap.html" target="_blank" alt="default" title="default" /> <!__ default- whole image__>
+    </map>
+
+    <h3>Q.43- Which type of video formats are supported by html5?</h3>
+    <h3>Q.44- Is audio tag supported in html5?</h3>
+    <p>Ans.- The video and audio tags are introduced in html5. The video tag is used to add video content to webpages.It supports various formats such as mp4,webm, and ogg.</p>
+    <p>The audio tag is used to add audio content to a webpage. mp3, ogg, and wav audio formats are supported by html5.</p>
+    <audio src="random-beep-76811.mp3" controls></audio><br />
+    <video src="video.mp4" height="300" width="300" controls loop></video>
+
+    <h3>Q.45- What are the different new form elements in html5?</h3>
+    <p>Ans.- HTML5 introduced a number of new form elements. Some of them are datalist, progress, meter, output and some input type elements.</p>
+    <p> Output tag is used to display the result of a calculation performed by the clientside script such as Javascript.</p>
+
+
+    <h3>Q.46- What are the new input types for form validation in html5?</h3>
+    <p>Ans.- HTML5 introduces several new input types like email,range,search,time,date,week,month,datetime-local,url,color,tel,number.</p>
+
+    <h3>Q.47- When are comments used in html?</h3>
+    <p>HTML comments are used to add notes or explanations in the html code that are not displayed by the browser.We can add single line or multiline comments using the same comment tag.</p>
+
+    <h3>Q.48- What happens when if there is no text between tags? Does this affect the dispaly of the html file?</h3>
+    <p>
+        Ans.- If there is no text or content between the tags, then there is nothing to format, so no formatting will apear.
+        If CSS properties are defined then if does affect layout structure.
+    </p>
+
+    <h3>Q.49- What are empty elements?</h3>
+    <p>
+        Ans.- Empty or void elements are html tags that do not have content and a closing tag.They are self-contained and perform specific functions.
+        Like img,input,br,link,meta tags.
+    </p>
+
+    <h3>Q.50- Difference between div and span tag?</h3>
+    <p>Ans.- Div tag is a block-level element and span tag is an inline element.Both are used to group and style content using CSS.</p>
+
+    <h3>Q.51- Is there any need to change the web browser to support html5?</h3>
+    <p>Ans.-No,HTML5 is widely supported by major browsers like Crome,Firefox,Edge,Safari and Opera.Older browser versions may have some limitations.</p>
+
+    <h3>Q.52- What are logical and physical tags in html?</h3>
+    <p>Ans.- Logical tag - describes the meaning and purpose of the content it surrounds, like strong,em,cite,code tags.</p>
+    <p>Physical tag - describes the presentation or appearance of the content, like b,i,u,strike,u tags.</p>
+    <p>Logical tags focus on what the text means, while physical tags focus on how it looks.</p>
+
+    <h3>Q.53-What is the difference between html and xhtml?</h3>
+    <p>
+        Ans.- HTML(Hypertext Markup Language) and XHTML(Extensible Hypertext Markup Language) both are markup languages used for creating and displaying webpages.
+        The main difference between them is the syntax and structure.HTML is more lenient in its syntax,while xhtml is an extension of html and has more strict syntax and follows XML rules.
+    </p>
+    <p>Case sensitive - html is not case sensitive. xhtml is case sensitive, elements and attributes must be in lowercase.</p>
+    <p>Tag Closer - in html empty tags don't need to be closed. In xhtml even empty tags must be closed using '/'.</p>
+    <p>Attribute Values - in html attribute values can be without quotes in some cases.In xhtml attribute values must be enclosed in quotes.</p>
+    <p>Error Handling - In html browsers can often ignore errors. In xhtml errors are more likely to cause issues.</p>
+    <p>Extension - html file can have extension like - .html, .htm. XHTML file can have extension like - .xhtml, .xht, .xml</p>
+
+    <h3>Q.54- Difference between class and id.</h3>
+    <p>Ans.- ID attribute - is used to uniquely identify an html element. Every element's id should be unique.</p>
+    <p>Class attribute - is used to group elements for styling and manipulation. we can apply multiple classes on a single element.</p>
+
+    <h3>Q.55- What is the limits of text field size?</h3>
+    <p>Ans.- There are three attributes of text field - size,maxlength and minlength.</p>
+    <p>size - defines the size or length of text field.</p>
+    <p>maxlength - defines the maximum no. of characters that can be entered by the user.</p>
+    <p>minlength - defines the minimum no. of characters that must be entered by the user.</p>
+
+    <h3>Q.56- What do you mean by markup language and hypertext in html? and explain the layout of html.</h3>
+    <p>
+        Ans.- In html, markup language refers to the tags and attributes used to define the structure and formatting of a webpage.
+        And hypertext refers to text that contains links to other documents or parts of the same document.
+    </p>
+    <p>
+        HTML layout refers to the way in which the content of a webpage is organised and structured.It makes easier to apply styles,organize content on a webpage.
+        This improves readability,accessibility and makes website easy to navigate.
+        There are various html layout elements like - header,footer,nav,section,main,aside,article tags.
+    </p>
+
+    <h3>Q.57-How are active links different from normal links?</h3>
+    <p>Ans.- A normal link is a hyperlink that contain pointer to another webpage or resource.</p>
+    <p>An active link is a hyperlink that is currently being interected with by the user.</p>
+
+    <h3>Q.58-What is the relationship between the border and rule attributes?</h3>
+    <p>Ans.- The border attribute specifies the border around the table and cells.</p>
+    <p>The rules attribute specifies internal borders between rows and columns.</p>
+
+    <h3>Q.59- What is style sheet?</h3>
+    <p>Ans.- A style sheet is a set of CSS(Cascading Style Sheet) rules that defines the overall appearance and design of the webpage.It can modify the color,font,spacing and layout of the html elements.<p>
+
+        <h3>Q.60- How many types of css can be included in html?</h3>
+    <p>Ans.-Three types of css can be included in html.</p>
+    <p>Inline css - using style attribute within html elements.</p>
+    <p>Internal css - using style tag inside of head tag.</p>
+    <p>External css - a file with .css extension that include css rules can be added using link tag inside the head tag.</p>
+
+    <h3>Q.61-How can you apply Javascript to a webpage?</h3>
+    <p>Ans.- We can add Javascript to a webpage using script tag that can be placed inside the head or body section.</p>
+    <p>To include an external Javascript file we can use 'src' attribute of script tag.</p>
+
+    <h3>Q.62-Can you create multicolored text on a webpage?</h3>
+    <p>Ans.- Yes,We can create multicolored text on a webpage using 'color' property of css.</p>
+
+    <h3>Q.63- Is it possible to change the color of the bullet?</h3>
+    <p>Ans.-Yes,We can change the color of bullet using CSS.</p>
+
+    <h3>Q.64-How many tag can be used to separate a section of texts?</h3>
+    <p>Ans.- There are three tags to separate the text - br,p and blockquote tags.</p>
+    
+    <h3>Q.65-What are the entities in html?</h3>
+    <p>Ans.-Entities are special character sequences used to display reserved or special characters.We can use both entity name or entity number.</p>
+    
+    <h3>Q.66-Why is url encoded in html?</h3>
+    <p>Ans.-URL encoding in html is used to ensure that special characters in urls are transmitted correctly over the internet.URLs can only be sent using ASCII character set.</p>
+
+    <h3>Q.67-What are the new features in html5?</h3>
+    <p>Ans.-1.Improved Syntax(header,footer,section,nav tags)</p>
+    <p>2.Enhanced Multimedia Support(audio,video tags)</p>
+    <p>3.New Form Elements and Input Types(email,date,progress,meter,tel,rage tags)</p>
+    <p>4.Canvas for Drawing Graphics</p>
+    <p>5.Local Storage and Offline Capabilities</p>
+
+    <h3>Q.68-What is DNS? and when it comes in picture?</h3>
+    <p>Ans.- Domain Name System is a system that translates human-readable domain names(like google.com) into IP addresses that computer use to communicate.</p>
+    <p>DNS comes into play whenever we try to access a website,send an email or use any other online service that requires a computer to locate a specific server or device on the internet.</p>
+
+    <h3>Q.69-What is IP address?</h3>
+    <p>Ans.-An IP address(Internet Protocol address) is a unique number assigned to each device connected to a computer network that identifies a device on the internet.It's like a digital address that allows devices to communicate with each other.</p>
+
+    <h3>Q.70-What is Localhost?</h3>
+    <p>Ans.-Localhost refers to the computer we are currently using.Localhost is the computer or hostname currently making a request to itself.In this case the computer is also the virtual server.</p>
+
+    <h3>Q.71-What is SEO?</h3>
+    <p>Ans.-SEO(Search Engine Optimization) is a process of improving a website's visibility and ranking in search engine results pages(SERPs) like Google,Bing and Yahoo.SEO involves various strategies like use of relevant keywords in titles,meta descriptions and headlines ,featuring descriptive urls with keywords rather than strings of numbers.</p>
+
+    <h3>Q.72-What is Inspect Element?</h3>
+    <p>Ans.-Inspect Element is a browser developer tool that allows us to view, understand and modify the html,css and javascript of a webpage.We can use it to temporarily change the appearance or functionality of a webpage without altering the original code.</p>
+
+    <h3>Q.73-What is Webpage Designing?</h3>
+    <p>Ans.-Webpage Designing is the process of creating the visual elements and structure of a website or webpage.It involves planning the layout,color schemes,typography and overall appearance to create a visually appealing and user friendly experience.</p>
+
+   <h3>Q.74-How tags are migrated from html4 to html5?</h3>
+   <p>Ans.-HTML5 introduces some new semantic tags like header,footer,section,article,nav,main tags that can replace div tag.</p>
+   <p>!DOCTYPE declaration and Meta Character Encoding is also got changed in html5.</p>
+
+   <h3>Q.75-What is SVG?</h3>
+   <p>Ans.-SVG stands for Scalable Vector Graphics.It defines vector based graphics in XML which can be directly embedded in html pages.SVG images are scalable, meaning they can be resized without losing quality and they can be animated.We can embed SVG images directly into html using the svg tag.</p>
+</body>
+</html>
+
